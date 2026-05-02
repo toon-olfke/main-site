@@ -1,10 +1,10 @@
 services:
   kernloos:
-    image: toonolfke/kernloos:latest
+    image: toonolfke/site-dev:latest
     container_name: kernloos
     restart: unless-stopped
     ports:
       - "3020:3000"
     environment:
-      - ORIGIN=https://kernloos.be
+      - ORIGIN=https://site-dev.olfke.be
       - NODE_ENV=production

@@ -26,9 +26,9 @@ jobs:
         with:
           context: .
           push: true
-          tags: toonolfke/kernloos:latest
-          cache-from: type=registry,ref=toonolfke/kernloos:cache
-          cache-to: type=registry,ref=toonolfke/kernloos:cache,mode=max
+          tags: toonolfke/site-dev:latest
+          cache-from: type=registry,ref=toonolfke/site-dev:cache
+          cache-to: type=registry,ref=toonolfke/site-dev:cache,mode=max
 
       - name: Copy docker-compose to server
         uses: appleboy/scp-action@v0.1.7
@@ -36,9 +36,9 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
-          port: 2222
+          port: ${{ secrets.DEPLOY_PORT }}
           source: docker-compose.yml
-          target: /opt/kernloos/
+          target: /opt/site-dev/
 
       - name: Deploy on server
         uses: appleboy/ssh-action@v1.0.3
@@ -46,9 +46,9 @@ jobs:
           host: ${{ secrets.DEPLOY_HOST }}
           username: ${{ secrets.DEPLOY_USER }}
           key: ${{ secrets.DEPLOY_SSH_KEY }}
-          port: 2222
+          port: ${{ secrets.DEPLOY_PORT }}
           script: |
-            cd /opt/kernloos
+            cd /opt/site-dev
             docker compose pull
             docker compose up -d
             docker image prune -f
