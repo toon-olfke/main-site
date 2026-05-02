@@ -27,6 +27,13 @@
 			tag: 'Ongoing Support',
 			body: 'Ad hoc of op afspraak. We zijn bereikbaar, we reageren snel, en we leggen uit wat we doen in begrijpelijke taal.',
 			items: ['Proactief onderhoud', 'Probleemanalyse', 'Remote support', 'Documentatie & overdracht', 'Geen onzinnige SLA-contracten']
+		},
+		{
+			number: '05',
+			title: 'Microsoft 365',
+			tag: 'Licenties & Beheer',
+			body: 'Microsoft 365, Intune, Entra ID, Exchange. We zetten het op, we beheren het, en we leggen u uit wat u eigenlijk betaalt.',
+			items: ['Microsoft 365 setup & migratie', 'Intune & Autopilot', 'Entra ID (Azure AD)', 'Exchange Online', 'Teams & SharePoint']
 		}
 	];
 </script>

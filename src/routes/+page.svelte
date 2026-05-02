@@ -14,7 +14,12 @@
 			number: '03',
 			title: 'Ondersteuning',
 			description: 'Dingen blijven kapotgaan. Wij blijven er ook. Dat is de deal.'
-		}
+		},
+		{
+			number: '04',
+			title: 'Microsoft & Cloud',
+			description: 'Microsoft 365, Intune, Exchange. De software die iedereen gebruikt maar niemand begrijpt.'
+		},
 	];
 
 	const stats = [
@@ -294,7 +299,7 @@
 
 	.services-grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(2, 1fr);
 		gap: 0;
 		border: var(--border);
 	}
@@ -348,6 +353,15 @@
 	.more-link:hover {
 		color: var(--yellow-dark);
 		border-color: var(--yellow-dark);
+	}
+
+	.service-card:nth-child(1),
+	.service-card:nth-child(2) {
+		border-bottom: var(--border);
+	}
+
+	.service-card:nth-child(even) {
+		border-right: none;
 	}
 
 	/* MANIFESTO */
