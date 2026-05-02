@@ -1,19 +1,19 @@
 <script lang="ts">
 	const team = [
 		{
-			initials: 'TO',
-			name: 'Toon O.',
-			role: 'Infrastructuur & Netwerken',
-			bio: 'Sysadmin van beroep en overtuiging. Bouwt netwerken, fixt firewalls, en documenteert dingen die anderen liever vergeten. Drinkt te veel koffie.',
-			tags: ['pfSense', 'Linux', 'Docker', 'Proxmox', 'Caddy']
+			initials: 'MDM',
+			name: 'Mike De Mullier',
+			role: 'Senior Consultant',
+			bio: 'Twintig jaar IT. Heeft genoeg verkeerd zien gaan om te weten wat werkt, en genoeg goede oplossingen gezien om niet te overdrijven.',
+			tags: ['Consultancy', 'Microsoft 365', 'Infrastructuur', 'Support']
 		},
 		{
-			initials: '??',
-			name: 'Collega V.',
-			role: 'Consultancy & Support',
-			bio: 'Vult deze plek in. Neem contact op voor de echte bio — die schrijven we als we er samen uit zijn welke woorden we voor onszelf gebruiken.',
-			tags: ['Consultancy', 'Support', 'Infrastructuur']
-		}
+			initials: 'TDW',
+			name: 'Toon De Witte',
+			role: 'Infrastructuur & Netwerken',
+			bio: 'Houdt netwerken draaiende die niemand opmerkt tot ze dat niet meer doen. Gespecialiseerd in infrastructuur, firewalls en de stille tevredenheid van een schone config.',
+			tags: ['pfSense', 'Linux', 'Docker', 'Proxmox', 'Caddy']
+		},
 	];
 
 	const values = [
