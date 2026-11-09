@@ -15,8 +15,8 @@
 <header>
 	<div class="header-inner">
 		<a href="/" class="logo">
-			<span class="logo-mark">K</span>
-			<span class="logo-text">KERNLOOS</span>
+			<span class="logo-mark">T</span>
+			<span class="logo-text">Tooper</span>
 		</a>
 
 		<nav class="desktop-nav">
